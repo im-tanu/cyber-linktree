@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanu | Developer Links</title>
+    <style>
+        :root {
+            --bg: #0a0a0a;
+            --accent: #ff0055;
+            --glass: rgba(255, 255, 255, 0.05);
+            --border: rgba(255, 255, 255, 0.1);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background: var(--bg); color: #fff; display: flex; justify-content: center; align-items: center; min-height: 100vh; overflow-x: hidden; }
+        .container { width: 100%; max-width: 400px; padding: 20px; text-align: center; }
+        .profile-img { width: 100px; height: 100px; border-radius: 50%; border: 3px solid var(--accent); margin-bottom: 15px; }
+        h1 { font-size: 1.5rem; margin-bottom: 5px; letter-spacing: 1px; }
+        p { font-size: 0.9rem; color: #888; margin-bottom: 30px; }
+        .links { display: flex; flex-direction: column; gap: 15px; }
+        .link { 
+            background: var(--glass); 
+            border: 1px solid var(--border); 
+            padding: 15px; 
+            border-radius: 12px; 
+            text-decoration: none; 
+            color: #fff; 
+            font-weight: 500; 
+            backdrop-filter: blur(10px); 
+            transition: 0.3s; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        .link:hover { background: var(--accent); border-color: var(--accent); transform: translateY(-3px); box-shadow: 0 10px 20px rgba(255, 0, 85, 0.2); }
+        .footer { margin-top: 40px; font-size: 0.7rem; color: #444; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://avatars.githubusercontent.com/u/343800207?v=4" alt="Tanu" class="profile-img">
+        <h1>Tanu</h1>
+        <p>Fullstack Dev | Researcher | Tech Enthusiast</p>
+        <div class="links">
+            <a href="https://t.me/t4nuo" class="link">Telegram</a>
+            <a href="https://github.com/im-tanu" class="link">GitHub</a>
+            <a href="https://t.me/tanustech" class="link">Tech Vault Channel</a>
+            <a href="https://im-tanu.github.io/tanu-portfolio" class="link">Portfolio</a>
+        </div>
+        <div class="footer">Built with ❤️ by Tanu</div>
+    </div>
+</body>
+</html>
